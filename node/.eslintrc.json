@@ -1,0 +1,25 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "semi": ["error", "never"],
+      "import/prefer-default-export": 0,
+      "no-underscore-dangle": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+         "config": "webpack.config.js",
+         "extensions": [".js"]
+        }
+      }
+    },
+    "globals": {
+      "expect": true,
+      "it": true
+    }
+}
+
